@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+        .officeFrame {
+            position: relative;
+            width: 100vw;
+            height: 90vh;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .navigation-button {
+            position: absolute;
+            top: 50%;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            transform: translateY(-50%);
+            z-index: 2; /* Memastikan tombol di atas iframe */
+        }
+        .nav-prev {
+            left: 10px;
+        }
+        .nav-next {
+            right: 10px;
+        }
+        @media (max-width: 768px) {
+            .navigation-button {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+                line-height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="officeFrame">
+        <iframe id="presentationFrame" src="https://1drv.ms/p/s!AmBH1fEAsgjYoBCOo8MlF23IQ-Jh?embed=1&amp;em=2&amp;wdAr=1.7777777777777777&amp;wdEaaCheck=1">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+       
+    </div>
+    
+</body>
+</html>
